@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ayuda — SIRAME</title>
+<link rel="icon" href="Img/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="logo">
+      <img src="Img/logo.png" alt="Logo SIRAME" class="logo__img" onerror="this.style.display='none'">
+    </a>
+    <nav class="nav__links" aria-label="Navegación principal">
+      <a href="index.html" class="nav__link">Inicio</a>
+      <a href="modulos.html" class="nav__link">Módulos</a>
+      <a href="roles.html" class="nav__link">Roles</a>
+      <a href="sistema.html" class="nav__link">El sistema</a>
+      <a href="precios.html" class="nav__link">Precios</a>
+      <a href="ayuda.html" class="nav__link is-active">Ayuda</a>
+      <a href="contacto.html" class="nav__link">Contacto</a>
+      <a href="acceso.html" class="doodle-btn doodle-btn--nav">
+        <span class="btn-text">Solicitar acceso</span>
+        <span class="icon-1" aria-hidden="true"><svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><path class="fill-star" d="M25 2 L31 18 L48 18 L34 28 L39 45 L25 35 L11 45 L16 28 L2 18 L19 18 Z"/><path class="ink" d="M25 2 L31 18 L48 18 L34 28 L39 45 L25 35 L11 45 L16 28 L2 18 L19 18 Z" fill="none" stroke-width="1.5"/></svg></span>
+        <span class="icon-2" aria-hidden="true"><svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><path class="fill-heart" d="M25 45 C25 45 5 32 5 18 C5 10 11 5 18 5 C22 5 25 8 25 8 C25 8 28 5 32 5 C39 5 45 10 45 18 C45 32 25 45 25 45 Z"/><path class="ink" d="M25 45 C25 45 5 32 5 18 C5 10 11 5 18 5 C22 5 25 8 25 8 C25 8 28 5 32 5 C39 5 45 10 45 18 C45 32 25 45 25 45 Z" fill="none" stroke-width="1.5"/></svg></span>
+        <span class="icon-3" aria-hidden="true"><svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><path class="fill-spark" d="M25 2 L29 20 L48 25 L29 30 L25 48 L21 30 L2 25 L21 20 Z"/><path class="ink" d="M25 2 L29 20 L48 25 L29 30 L25 48 L21 30 L2 25 L21 20 Z" fill="none" stroke-width="1.5"/></svg></span>
+      </a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav__mobile" id="navMobile" aria-label="Navegación móvil">
+    <a href="index.html">Inicio</a>
+    <a href="modulos.html">Módulos</a>
+    <a href="roles.html">Roles</a>
+    <a href="sistema.html">El sistema</a>
+    <a href="precios.html">Precios</a>
+    <a href="ayuda.html">Ayuda</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="acceso.html" class="nav__cta">Solicitar acceso</a>
+  </nav>
+</header>
+
+<main>
+
+  <div style="max-width: 1120px; margin: 0 auto; padding: 40px 32px 0; text-align: right;">
+    <a href="index.html" class="btn btn--ghost" style="padding: 8px 16px; font-size: 13px;">← Volver al Inicio</a>
+  </div>
+
+  <section class="access-hero">
+    <p class="hero__eyebrow">Ayuda</p>
+    <h1 class="section__title">Preguntas frecuentes</h1>
+    <p class="access-hero__subtitle">Respuestas rápidas sobre cómo funciona SIRAME, el acceso y los costos. Si no encontrás lo que buscás, escribinos desde <a href="contacto.html" class="inline-link">Contacto</a>.</p>
+  </section>
+
+  <section>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>¿Por qué elegir SIRAME en lugar de usar hojas de cálculo como Excel?</summary>
+        <div class="faq-item__body">Excel no ofrece control de acceso estricto por roles, permite la modificación accidental o intencionada de datos sin dejar registro y no valida si un número de inventario se duplica. SIRAME garantiza la trazabilidad inalterable de quién realizó cada movimiento, aplica seguridad bancaria en claves (bcrypt) y actualiza los datos de forma atómica con transacciones MySQL (COMMIT / ROLLBACK).</div>
+      </details>
+      <details class="faq-item">
+        <summary>¿El sistema funciona sin conexión a internet?</summary>
+        <div class="faq-item__body">Sí. En su modalidad <strong>On-Premise</strong> (servidor local), SIRAME funciona al 100% dentro de la red local (LAN) de la institución sin necesidad de contar con acceso a internet.</div>
+      </details>
+      <details class="faq-item">
+        <summary>¿Qué ocurre si un equipo registrado se cambia de aula u oficina?</summary>
+        <div class="faq-item__body">El usuario con rol de Coordinador o Administración registra el movimiento en el módulo de Traslados. El sistema guarda la fecha, motivo, origen, destino y responsable, y actualiza de manera automática e instantánea la ubicación actual del equipo en la base de datos.</div>
+      </details>
+      <details class="faq-item">
+        <summary>¿Cómo garantiza el sistema la seguridad de las contraseñas?</summary>
+        <div class="faq-item__body">Las contraseñas no se almacenan como texto plano. SIRAME utiliza la librería <strong>bcrypt</strong> para aplicar un algoritmo de hash criptográfico con "sal" (salt), lo que impide que incluso los administradores del sistema puedan ver la clave real de los usuarios.</div>
+      </details>
+      <details class="faq-item">
+        <summary>¿Un profesor puede dar de baja un equipo que se arruinó?</summary>
+        <div class="faq-item__body">No. El profesor solo tiene permiso para cambiar el estado del equipo a "Dañado" o reportar la incidencia. La baja definitiva del inventario requiere de una verificación y procesamiento por parte del Coordinador o la Administración.</div>
+      </details>
+      <details class="faq-item">
+        <summary>¿Se pueden recuperar datos si ocurre un fallo en el equipo donde se instaló el sistema?</summary>
+        <div class="faq-item__body">Al estar basado en MySQL, el sistema permite programar respaldos (backups) automáticos periódicos de la base de datos. En caso de fallo del equipo cliente, solo se reinstala la aplicación ejecutable de Python sin perder la información almacenada en el servidor.</div>
+      </details>
+      <details class="faq-item">
+        <summary>¿El sistema se puede personalizar con el logotipo e imagen de nuestra institución?</summary>
+        <div class="faq-item__body">Sí. SIRAME cuenta con un panel visual configurable que permite adaptar la paleta de colores corporativos, la iconografía y el logotipo oficial en el encabezado y en el panel lateral de navegación.</div>
+      </details>
+      <details class="faq-item">
+        <summary>¿Qué requisitos técnicos mínimos necesita una computadora para ejecutar SIRAME?</summary>
+        <div class="faq-item__body">Para el cliente de escritorio se requiere cualquier computadora con sistema operativo Windows 10/11, Linux o macOS, con al menos 2 GB de RAM y 200 MB de espacio en disco. Para el servidor de base de datos se recomienda un procesador de 2 núcleos, 4 GB de RAM y MySQL Server 8.0 o superior instalado.</div>
+      </details>
+      <details class="faq-item">
+        <summary>¿Cómo solicito acceso al sistema?</summary>
+        <div class="faq-item__body">Completá el formulario en <a href="acceso.html">Solicitar acceso</a> con tus datos institucionales y el rol que necesitás. Administración revisa cada solicitud y habilita tu usuario.</div>
+      </details>
+    </div>
+
+    <div class="help-cards">
+      <a href="acceso.html" class="help-card">
+        <span class="help-card__icon">🔑</span>
+        <h3>Solicitar acceso</h3>
+        <p>Pedí tu usuario con el rol correspondiente.</p>
+      </a>
+      <a href="roles.html" class="help-card">
+        <span class="help-card__icon">👥</span>
+        <h3>Roles y permisos</h3>
+        <p>Mirá qué puede hacer cada rol en el sistema.</p>
+      </a>
+      <a href="contacto.html" class="help-card">
+        <span class="help-card__icon">✉</span>
+        <h3>Contacto</h3>
+        <p>Escribinos si tenés otra duda.</p>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <div class="cta-band">
+      <div class="cta-band__inner">
+        <h2>¿Listo para empezar?</h2>
+        <p>Solicitá acceso y empezá a ordenar el inventario de tu institución.</p>
+        <a href="acceso.html" class="doodle-btn doodle-btn--large doodle-btn--onred">
+          <span class="btn-text">Solicitar acceso</span>
+          <span class="icon-1" aria-hidden="true"><svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><path class="fill-star" d="M25 2 L31 18 L48 18 L34 28 L39 45 L25 35 L11 45 L16 28 L2 18 L19 18 Z"/><path class="ink" d="M25 2 L31 18 L48 18 L34 28 L39 45 L25 35 L11 45 L16 28 L2 18 L19 18 Z" fill="none" stroke-width="1.5"/></svg></span>
+          <span class="icon-2" aria-hidden="true"><svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><path class="fill-heart" d="M25 45 C25 45 5 32 5 18 C5 10 11 5 18 5 C22 5 25 8 25 8 C25 8 28 5 32 5 C39 5 45 10 45 18 C45 32 25 45 25 45 Z"/><path class="ink" d="M25 45 C25 45 5 32 5 18 C5 10 11 5 18 5 C22 5 25 8 25 8 C25 8 28 5 32 5 C39 5 45 10 45 18 C45 32 25 45 25 45 Z" fill="none" stroke-width="1.5"/></svg></span>
+          <span class="icon-3" aria-hidden="true"><svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><path class="fill-spark" d="M25 2 L29 20 L48 25 L29 30 L25 48 L21 30 L2 25 L21 20 Z"/><path class="ink" d="M25 2 L29 20 L48 25 L29 30 L25 48 L21 30 L2 25 L21 20 Z" fill="none" stroke-width="1.5"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <a href="index.html" class="logo logo--footer">
+        <img src="Img/logo.png" alt="Logo SIRAME" class="logo__img" onerror="this.style.display='none'">
+      </a>
+      <p>Sistema de Inventario, Registro y Administración de Materiales y Equipos (Inframen).</p>
+    </div>
+    <div class="footer__links">
+      <a href="index.html">Inicio</a>
+      <a href="modulos.html">Módulos</a>
+      <a href="roles.html">Roles</a>
+      <a href="sistema.html">El sistema</a>
+      <a href="precios.html">Precios</a>
+      <a href="ayuda.html">Ayuda</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="acceso.html">Solicitar acceso</a>
+    </div>
+  </div>
+  <p class="footer__legal">© 2026 SIRAME. Todos los derechos reservados.</p>
+</footer>
+
+<script src="JS/javascript.js"></script>
+</body>
+</html>

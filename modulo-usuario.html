@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Módulo Usuario — SIRAME</title>
+<link rel="icon" href="Img/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="logo">
+      <img src="Img/logo.png" alt="Logo SIRAME" class="logo__img" onerror="this.style.display='none'">
+    </a>
+    <nav class="nav__links" aria-label="Navegación principal">
+      <a href="index.html" class="nav__link">Inicio</a>
+      <a href="modulos.html" class="nav__link is-active">Módulos</a>
+      <a href="roles.html" class="nav__link">Roles</a>
+      <a href="sistema.html" class="nav__link">El sistema</a>
+      <a href="precios.html" class="nav__link">Precios</a>
+      <a href="ayuda.html" class="nav__link">Ayuda</a>
+      <a href="contacto.html" class="nav__link">Contacto</a>
+      <a href="acceso.html" class="doodle-btn doodle-btn--nav">
+        <span class="btn-text">Solicitar acceso</span>
+        <span class="icon-1" aria-hidden="true"><svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><path class="fill-star" d="M25 2 L31 18 L48 18 L34 28 L39 45 L25 35 L11 45 L16 28 L2 18 L19 18 Z"/><path class="ink" d="M25 2 L31 18 L48 18 L34 28 L39 45 L25 35 L11 45 L16 28 L2 18 L19 18 Z" fill="none" stroke-width="1.5"/></svg></span>
+        <span class="icon-2" aria-hidden="true"><svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><path class="fill-heart" d="M25 45 C25 45 5 32 5 18 C5 10 11 5 18 5 C22 5 25 8 25 8 C25 8 28 5 32 5 C39 5 45 10 45 18 C45 32 25 45 25 45 Z"/><path class="ink" d="M25 45 C25 45 5 32 5 18 C5 10 11 5 18 5 C22 5 25 8 25 8 C25 8 28 5 32 5 C39 5 45 10 45 18 C45 32 25 45 25 45 Z" fill="none" stroke-width="1.5"/></svg></span>
+        <span class="icon-3" aria-hidden="true"><svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><path class="fill-spark" d="M25 2 L29 20 L48 25 L29 30 L25 48 L21 30 L2 25 L21 20 Z"/><path class="ink" d="M25 2 L29 20 L48 25 L29 30 L25 48 L21 30 L2 25 L21 20 Z" fill="none" stroke-width="1.5"/></svg></span>
+      </a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav__mobile" id="navMobile" aria-label="Navegación móvil">
+    <a href="index.html">Inicio</a>
+    <a href="modulos.html">Módulos</a>
+    <a href="roles.html">Roles</a>
+    <a href="sistema.html">El sistema</a>
+    <a href="precios.html">Precios</a>
+    <a href="ayuda.html">Ayuda</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="acceso.html" class="nav__cta">Solicitar acceso</a>
+  </nav>
+</header>
+
+<main>
+
+  <div class="breadcrumb-wrap">
+    <a href="index.html">Inicio</a><span>/</span>
+    <a href="modulos.html">Módulos</a><span>/</span>
+    <span class="current">Usuario</span>
+  </div>
+
+  <div style="max-width: 1120px; margin: 0 auto; padding: 20px 24px 0; text-align: right;">
+    <a href="index.html" class="btn btn--ghost" style="padding: 8px 16px; font-size: 13px;">← Volver al Inicio</a>
+  </div>
+
+  <section class="module-hero">
+    <span class="module-hero__icon">👤</span>
+    <h1 class="section__title">Usuario</h1>
+    <p class="page-hero__subtitle">Cada persona que entra a SIRAME tiene su propia cuenta con un rol asignado. Los permisos se heredan del rol, no se configuran uno por uno.</p>
+  </section>
+
+  <section class="page-content">
+    <div class="module-photo-wide">
+      <img src="Img/modulo-usuario.jpg" alt="Usuarios accediendo al sistema SIRAME" onerror="this.parentElement.classList.add('img-fallback')">
+    </div>
+
+    <div class="row g-4">
+      <div>
+        <div class="feature-card">
+          <h3>Qué registra</h3>
+          <ul class="feature-card__list">
+            <li>Nombre completo y correo institucional</li>
+            <li>Rol asignado: Profesor, Coordinador o Administración</li>
+            <li>Contraseña cifrada con bcrypt</li>
+            <li>Estado de la cuenta (activa o inactiva)</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="feature-card">
+          <h3>Cómo funciona</h3>
+          <ul class="feature-card__list">
+            <li>Administración crea la cuenta y asigna el rol</li>
+            <li>El usuario ingresa con su correo y contraseña</li>
+            <li>El sistema muestra solo los módulos permitidos por su rol</li>
+            <li>Cada acción queda registrada con el usuario que la hizo</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="who-can">
+      <h3>¿Quién puede hacer qué?</h3>
+      <div class="who-grid">
+        <div class="who-item"><span class="who-badge who-badge--1">P</span>Profesor: gestiona su propio perfil</div>
+        <div class="who-item"><span class="who-badge who-badge--2">C</span>Coordinador: consulta usuarios de su área</div>
+        <div class="who-item"><span class="who-badge who-badge--3">A</span>Administración: crea, edita, desactiva y elimina cuentas</div>
+      </div>
+    </div>
+
+    <p style="text-align:center;margin-top:36px">
+      <a href="modulos.html" class="btn btn--ghost">← Volver a todos los módulos</a>
+    </p>
+  </section>
+
+  <section>
+    <div class="cta-band">
+      <div class="cta-band__inner">
+        <h2>¿Querés ver el módulo Usuario en acción?</h2>
+        <p>Solicitá acceso y gestioná tu cuenta según tu rol.</p>
+        <a href="acceso.html" class="doodle-btn doodle-btn--large doodle-btn--onred">
+          <span class="btn-text">Solicitar acceso</span>
+          <span class="icon-1" aria-hidden="true"><svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><path class="fill-star" d="M25 2 L31 18 L48 18 L34 28 L39 45 L25 35 L11 45 L16 28 L2 18 L19 18 Z"/><path class="ink" d="M25 2 L31 18 L48 18 L34 28 L39 45 L25 35 L11 45 L16 28 L2 18 L19 18 Z" fill="none" stroke-width="1.5"/></svg></span>
+          <span class="icon-2" aria-hidden="true"><svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><path class="fill-heart" d="M25 45 C25 45 5 32 5 18 C5 10 11 5 18 5 C22 5 25 8 25 8 C25 8 28 5 32 5 C39 5 45 10 45 18 C45 32 25 45 25 45 Z"/><path class="ink" d="M25 45 C25 45 5 32 5 18 C5 10 11 5 18 5 C22 5 25 8 25 8 C25 8 28 5 32 5 C39 5 45 10 45 18 C45 32 25 45 25 45 Z" fill="none" stroke-width="1.5"/></svg></span>
+          <span class="icon-3" aria-hidden="true"><svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><path class="fill-spark" d="M25 2 L29 20 L48 25 L29 30 L25 48 L21 30 L2 25 L21 20 Z"/><path class="ink" d="M25 2 L29 20 L48 25 L29 30 L25 48 L21 30 L2 25 L21 20 Z" fill="none" stroke-width="1.5"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <a href="index.html" class="logo logo--footer">
+        <img src="Img/logo.png" alt="Logo SIRAME" class="logo__img" onerror="this.style.display='none'">
+      </a>
+      <p>Sistema de Inventario, Registro y Administración de Materiales y Equipos (Inframen).</p>
+    </div>
+    <div class="footer__links">
+      <a href="index.html">Inicio</a>
+      <a href="modulos.html">Módulos</a>
+      <a href="roles.html">Roles</a>
+      <a href="sistema.html">El sistema</a>
+      <a href="precios.html">Precios</a>
+      <a href="ayuda.html">Ayuda</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="acceso.html">Solicitar acceso</a>
+    </div>
+  </div>
+  <p class="footer__legal">© 2026 SIRAME. Todos los derechos reservados.</p>
+</footer>
+
+<script src="JS/javascript.js"></script>
+</body>
+</html>

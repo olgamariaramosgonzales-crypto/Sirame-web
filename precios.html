@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Precios — SIRAME</title>
+<link rel="icon" href="Img/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="logo">
+      <img src="Img/logo.png" alt="Logo SIRAME" class="logo__img" onerror="this.style.display='none'">
+    </a>
+    <nav class="nav__links" aria-label="Navegación principal">
+      <a href="index.html" class="nav__link">Inicio</a>
+      <a href="modulos.html" class="nav__link">Módulos</a>
+      <a href="roles.html" class="nav__link">Roles</a>
+      <a href="sistema.html" class="nav__link">El sistema</a>
+      <a href="precios.html" class="nav__link is-active">Precios</a>
+      <a href="ayuda.html" class="nav__link">Ayuda</a>
+      <a href="contacto.html" class="nav__link">Contacto</a>
+      <a href="acceso.html" class="doodle-btn doodle-btn--nav">
+        <span class="btn-text">Solicitar acceso</span>
+        <span class="icon-1" aria-hidden="true"><svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><path class="fill-star" d="M25 2 L31 18 L48 18 L34 28 L39 45 L25 35 L11 45 L16 28 L2 18 L19 18 Z"/><path class="ink" d="M25 2 L31 18 L48 18 L34 28 L39 45 L25 35 L11 45 L16 28 L2 18 L19 18 Z" fill="none" stroke-width="1.5"/></svg></span>
+        <span class="icon-2" aria-hidden="true"><svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><path class="fill-heart" d="M25 45 C25 45 5 32 5 18 C5 10 11 5 18 5 C22 5 25 8 25 8 C25 8 28 5 32 5 C39 5 45 10 45 18 C45 32 25 45 25 45 Z"/><path class="ink" d="M25 45 C25 45 5 32 5 18 C5 10 11 5 18 5 C22 5 25 8 25 8 C25 8 28 5 32 5 C39 5 45 10 45 18 C45 32 25 45 25 45 Z" fill="none" stroke-width="1.5"/></svg></span>
+        <span class="icon-3" aria-hidden="true"><svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><path class="fill-spark" d="M25 2 L29 20 L48 25 L29 30 L25 48 L21 30 L2 25 L21 20 Z"/><path class="ink" d="M25 2 L29 20 L48 25 L29 30 L25 48 L21 30 L2 25 L21 20 Z" fill="none" stroke-width="1.5"/></svg></span>
+      </a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav__mobile" id="navMobile" aria-label="Navegación móvil">
+    <a href="index.html">Inicio</a>
+    <a href="modulos.html">Módulos</a>
+    <a href="roles.html">Roles</a>
+    <a href="sistema.html">El sistema</a>
+    <a href="precios.html">Precios</a>
+    <a href="ayuda.html">Ayuda</a>
+    <a href="contacto.html">Contacto</a>
+    <a href="acceso.html" class="nav__cta">Solicitar acceso</a>
+  </nav>
+</header>
+
+<main>
+
+  <div style="max-width: 1120px; margin: 0 auto; padding: 40px 32px 0; text-align: right;">
+    <a href="index.html" class="btn btn--ghost" style="padding: 8px 16px; font-size: 13px;">← Volver al Inicio</a>
+  </div>
+
+  <section class="access-hero">
+    <p class="hero__eyebrow">Precios y licenciamiento</p>
+    <h1 class="section__title">Planes claros, sin letra pequeña</h1>
+    <p class="access-hero__subtitle">Elegí entre licencia On-Premise (servidor local, pago único) o modalidad SaaS (suscripción en la nube). Ambos incluyen instalación, configuración y capacitación por roles.</p>
+  </section>
+
+  <section class="pricing-tiers">
+    <div class="section__head">
+      <p class="section__eyebrow">Opción 1</p>
+      <h2 class="section__title">Licencia On-Premise (Servidor Local)</h2>
+      <p class="section__subtitle">Pago único por servidor. Ideal para colegios, institutos y organizaciones con infraestructura propia que prefieren no pagar mensualidades.</p>
+    </div>
+
+    <div class="price-cards" style="max-width:780px;margin:0 auto;">
+      <article class="price-card" style="grid-column:span 3;text-align:center;">
+        <span class="price-card__label">Pago único</span>
+        <h3 class="price-card__title">SIRAME On-Premise</h3>
+        <p class="price-card__amount">$1,200 – $1,800 <span>USD</span></p>
+        <p class="price-card__desc" style="max-width:560px;margin:0 auto 20px;">
+          Instalación del sistema en la red interna de la institución, configuración de la base de datos MySQL local, carga inicial de datos, capacitación para el personal por roles y <strong>3 meses de garantía de soporte técnico</strong>.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="modules">
+    <div class="section__head">
+      <p class="section__eyebrow">Opción 2</p>
+      <h2 class="section__title">Modalidad SaaS (Suscripción en la Nube)</h2>
+      <p class="section__subtitle">Alojamiento en la nube, respaldos diarios automáticos, actualizaciones de software y soporte técnico continuo.</p>
+    </div>
+
+    <div class="price-cards">
+      <article class="price-card">
+        <span class="price-card__label">PyME / Institucional Pequeño</span>
+        <h3 class="price-card__title">Plan PyME</h3>
+        <p class="price-card__amount">$49 <span>USD / mes</span></p>
+        <p class="price-card__desc">Hasta <strong>500 activos</strong> y <strong>10 usuarios</strong>. Ideal para instituciones educativas pequeñas o áreas corporativas.</p>
+      </article>
+
+      <article class="price-card price-card--highlight">
+        <span class="price-card__flag">Más elegido</span>
+        <span class="price-card__label">Profesional / Corporativo</span>
+        <h3 class="price-card__title">Plan Profesional</h3>
+        <p class="price-card__amount">$99 <span>USD / mes</span></p>
+        <p class="price-card__desc">Hasta <strong>2,500 activos</strong> y <strong>usuarios ilimitados</strong>. Para organizaciones medianas y corporaciones.</p>
+      </article>
+
+      <article class="price-card">
+        <span class="price-card__label">Enterprise</span>
+        <h3 class="price-card__title">Plan Enterprise</h3>
+        <p class="price-card__amount">$199 <span>USD / mes</span></p>
+        <p class="price-card__desc"><strong>Activos ilimitados</strong>, múltiples sedes y <strong>soporte prioritario 24/7</strong>. Para grandes instituciones y corporaciones multi-sede.</p>
+      </article>
+    </div>
+
+    <div class="addon-cards">
+      <div class="addon-card">
+        <span class="addon-card__icon">🏷</span>
+        <h4>Etiquetas QR / código de barras</h4>
+        <p>$250 USD · Módulo de impresión y lectura</p>
+      </div>
+      <div class="addon-card">
+        <span class="addon-card__icon">🎓</span>
+        <h4>Capacitación extra</h4>
+        <p>$150 USD por jornada personalizada</p>
+      </div>
+      <div class="addon-card">
+        <span class="addon-card__icon">☁️</span>
+        <h4>Respaldos automáticos</h4>
+        <p>Incluidos en todos los planes SaaS</p>
+      </div>
+      <div class="addon-card">
+        <span class="addon-card__icon">🛠</span>
+        <h4>Soporte técnico</h4>
+        <p>Continuo en SaaS · 3 meses en On-Premise</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="cta-band">
+      <div class="cta-band__inner">
+        <h2>¿Listo para cotizar tu inventario?</h2>
+        <p>Contanos cuántos equipos tenés y te confirmamos el precio exacto para tu institución.</p>
+        <a href="acceso.html" class="doodle-btn doodle-btn--large doodle-btn--onred">
+          <span class="btn-text">Solicitar acceso</span>
+          <span class="icon-1" aria-hidden="true"><svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><path class="fill-star" d="M25 2 L31 18 L48 18 L34 28 L39 45 L25 35 L11 45 L16 28 L2 18 L19 18 Z"/><path class="ink" d="M25 2 L31 18 L48 18 L34 28 L39 45 L25 35 L11 45 L16 28 L2 18 L19 18 Z" fill="none" stroke-width="1.5"/></svg></span>
+          <span class="icon-2" aria-hidden="true"><svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><path class="fill-heart" d="M25 45 C25 45 5 32 5 18 C5 10 11 5 18 5 C22 5 25 8 25 8 C25 8 28 5 32 5 C39 5 45 10 45 18 C45 32 25 45 25 45 Z"/><path class="ink" d="M25 45 C25 45 5 32 5 18 C5 10 11 5 18 5 C22 5 25 8 25 8 C25 8 28 5 32 5 C39 5 45 10 45 18 C45 32 25 45 25 45 Z" fill="none" stroke-width="1.5"/></svg></span>
+          <span class="icon-3" aria-hidden="true"><svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg"><path class="fill-spark" d="M25 2 L29 20 L48 25 L29 30 L25 48 L21 30 L2 25 L21 20 Z"/><path class="ink" d="M25 2 L29 20 L48 25 L29 30 L25 48 L21 30 L2 25 L21 20 Z" fill="none" stroke-width="1.5"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <a href="index.html" class="logo logo--footer">
+        <img src="Img/logo.png" alt="Logo SIRAME" class="logo__img" onerror="this.style.display='none'">
+      </a>
+      <p>Sistema de Inventario, Registro y Administración de Materiales y Equipos.</p>
+    </div>
+    <div class="footer__links">
+      <a href="index.html">Inicio</a>
+      <a href="modulos.html">Módulos</a>
+      <a href="roles.html">Roles</a>
+      <a href="sistema.html">El sistema</a>
+      <a href="precios.html">Precios</a>
+      <a href="ayuda.html">Ayuda</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+  </div>
+  <p class="footer__legal">© 2026 SIRAME. Todos los derechos reservados.</p>
+</footer>
+
+<script src="JS/javascript.js"></script>
+</body>
+</html>
